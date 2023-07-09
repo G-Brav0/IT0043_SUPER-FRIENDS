@@ -1,0 +1,352 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+    margin:0; 
+	padding:0;
+    box-sizing: border-box;
+    outline: none; 
+	border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.headere{
+	background-color: #444444;
+	color: #fff;
+}
+.containere{
+	max-width: 1400px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.navbare{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.headere .logoe img{
+    width: 150px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav a{
+	text-decoration: none;
+	color: #fff;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.btne{
+	display: inline-block;
+	background: #fa8003;
+	color: #fff;
+	padding: 10px 25px;
+	border-radius: 30px;
+	box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.2);
+	transition: background 0.3s;
+}
+
+.btne:hover{
+	background: #fa5c03;
+}
+
+hr{
+	border: none;
+	background: #ffac17;
+	height: 2.5px;
+}
+
+.headinge{
+	background: linear-gradient(45deg, #972937, #f93b32);
+}
+
+.rowe{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.cole-1{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.cole-1 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.cole-1 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px;
+}
+
+/*-------- slide css --------*/
+.mySlides {
+	display: none;
+}
+.slideshow-container img {
+	vertical-align: middle;
+}
+
+.slideshow-container {
+	position: relative;
+	margin: auto;
+}
+
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active {
+	background-color: #717171;
+}
+
+/*-------- fade animation --------*/
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+.line{
+	text-align: justify;
+	margin: 80px;
+}
+
+/*-------- Buttons --------*/
+.botones{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.botones a{
+	margin: auto;
+}
+
+/*-------- Footer --------*/
+.footere{
+	background: #d6001c;
+	color: #fff;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+.footere h3{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.footer-cole1 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.appe img{
+	width: 120px;
+	margin-bottom: 0;
+}
+.footere a{
+	text-decoration: none;
+	color: #fff;
+}
+.footere ul{
+	list-style-type: none;
+}
+.footere hr{
+	border: none;
+	background: #ffac17;
+	height: 1px;
+	margin: 20px 0;
+}
+
+@media only screen and (max-width: 1030px){
+	.cole-1 .btne{
+		margin-bottom: 20px;
+	}
+	.texte{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width: 800px){
+	#menuIe{
+		max-height: 0px;
+	}
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menuBe{
+		display: block;
+		cursor: pointer;
+	}
+	.navbare .btne{
+		margin-left: 3%;
+	}
+	.botones{
+		text-align: center;
+	}
+	.texte{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 600px){
+	.rowe{
+		text-align: center;
+	}
+	.cole-1, .cole-2{
+		flex-basis: 100%
+	}
+	.navbare .btne{
+		display: none;
+	}
+	.botones{
+		padding: 0px;
+		font-size: 15px;
+	}
+	.texte{
+		font-size: 15px;
+	}
+	.cole-1 .btne{
+		margin-bottom: auto;
+	}
+}
+@media only screen and (max-width: 450px){
+	.containere3 img{
+		width: 250px;
+	}
+	.texte{
+		top: 10%;
+	}
+	.botones{
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 365px){
+	.containere3 img{
+		padding-right: 25px;
+	}
+	.texte{
+		top: 10%;
+	}
+}
+
+/*-------- menu page CSS --------*/
+.ftitle{
+	text-align: center;
+	padding-top: 50px;
+	text-shadow: 2px 1.5px rgba(0, 0, 0, 1);
+	color: #d6001c;
+	font-size: 40px;
+}
+.mcontainer{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+    overflow-x: hidden;
+	display: flex;
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+.fcontainer{
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	grid-gap: 20px;
+	display: grid;
+	width: 1300px;
+	height: auto;
+}
+.fcontainer .fbox{
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 20px;
+	color: #000;
+	border: 2px solid #fb9329;
+}
+.fcontainer .fbox img{
+	height: 150px;
+}
+.fcontainer .fbox h3{
+	padding-top: 5px;
+    font-size: 16px;
+}
+.fcontainer .fbox .fprice{
+    font-size: 22px;
+    padding: 8px 0;
+}
+.fill{
+	background: #ffeab8;
+}
+.mcontainer2{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #ffeab8;
+    overflow-x: hidden;
+	display: flex;
+	padding-top: 25px;
+	padding-bottom: 40px;
+}
+.fcontainer2{
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 60px;
+	display: grid;
+	width: 80%;
+	height: auto;
+}
+.fcontainer2 .fbox{
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 20px;
+	color: #000;
+	border: 2px solid #fb9329;
+}
+.fcontainer2 .fbox img{
+	height: 200px;
+}
+
+/*-------- About page CSS --------*/
+.aboute{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-shadow: 2px 1.5px rgba(0, 0, 0, 1);
+	font-size: 50px;
+	color: #d6001c;
+}
